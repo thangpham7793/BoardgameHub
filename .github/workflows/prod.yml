@@ -1,5 +1,7 @@
 name: Vue WebApp s3 Deployment
-on: [workflow_dispatch]
+
+on: [push]
+
 jobs: 
   build-deploy:
     name: Build & Deploy Vue App to S3

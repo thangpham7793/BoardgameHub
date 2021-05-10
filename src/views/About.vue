@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>Deployment Successfully!</h1>
+    <h1>Testing Github Actions</h1>
   </div>
 </template>
