@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build && yarn deploy",
+    "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "deploy": "./deploy.sh"
+    "deploy": "yarn build && ./deploy.sh"
   },
   "dependencies": {
     "core-js": "^3.6.5",
