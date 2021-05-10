@@ -9,6 +9,7 @@ type AgeRating = `${Age}+`;
 type Genre = string;
 type Summary = string;
 type PlayMethod = string;
+type Title = string;
 
 type Popularity = {
   rating: Rating;
@@ -41,6 +42,7 @@ type Mechanics = {
 };
 
 type GameFact = {
+  title: Title;
   summary: Summary;
   genre: Genre;
   ageRating: AgeRating;
