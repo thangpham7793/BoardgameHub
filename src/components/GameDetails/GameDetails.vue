@@ -1,14 +1,23 @@
 <template>
   <Header />
-  <div id="container">Welcome to Game Details page</div>
+  <div id="container">
+    <Summary />
+    <Illustration />
+  </div>
 </template>
 
 <script>
 import Header from "@/components/GameDetails/Header.vue";
+import Summary from "@/components/GameDetails/Summary.vue";
+import Illustration from "@/components/GameDetails/Illustration.vue";
 import { mapGetters, mapActions } from "vuex";
 
 export default {
-  name: "GameDetails",
+  components: {
+    Header,
+    Summary,
+    Illustration,
+  },
   computed: {
     ...mapGetters([]),
   },
@@ -16,13 +25,13 @@ export default {
   methods: {
     ...mapActions([]),
   },
-  components: {
-    Header,
-  },
 };
 </script>
 
 <style scoped>
 #container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 </style>

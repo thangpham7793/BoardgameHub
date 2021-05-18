@@ -23,5 +23,6 @@ these categories to ensure the consistency of the changelog.
 
 #### :rocket: New Features
 
+- Add basic layout in details page
 - Add game details page placeholder
 - Add game details vuex module placeholder
